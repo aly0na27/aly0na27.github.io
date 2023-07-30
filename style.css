@@ -47,14 +47,23 @@
     font-family: 'Lato-Thin';
     src: url("fonts/Lato-Thin.ttf");
 }
- * {
-     box-sizing: border-box;
- }
+
+@font-face {
+    font-family: ''
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lato-Regular', sans-serif;
     color: #4c4e50;
+    /*line-height: 23px;*/
+    /*text-indent: 10px;*/
     /*background-color: #dad8d5;*/
 }
+
 .ak:before,
 .ak:after {
     content: " ";
@@ -64,6 +73,7 @@ body {
 .ak:after {
     clear: both;
 }
+
 .ir {
     display: block;
     width: 1px;
@@ -73,18 +83,21 @@ body {
     overflow: hidden;
 }
 
-nav h1,nav h2 {
+nav h1, nav h2 {
     text-align: center;
 }
+
 nav h1 {
     font-size: 54px;
     margin-bottom: 0;
 }
+
 nav h2 {
     color: #999;
     margin-top: 0;
     font-family: 'Lato-Thin', sans-serif;
 }
+
 nav {
     /*position: fixed;*/
     top: 0;
@@ -92,18 +105,22 @@ nav {
     background-color: #e6e6e6;
     padding: 5em 0;
 }
+
 nav header, nav ul {
     width: 100%;
 
 }
+
 nav header {
     margin-bottom: 2em;
 }
+
 nav ul {
     font-size: 1.3em;
     text-align: center;
     margin-bottom: 0;
 }
+
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -111,9 +128,10 @@ nav ul li {
     margin-right: .25em;
 
 }
+
 nav ul li:last-child {
-     /*margin-right: 0;*/
- }
+    /*margin-right: 0;*/
+}
 
 nav ul li a {
     display: block;
@@ -126,29 +144,89 @@ nav ul li a {
     border-radius: 999em;
     background-color: #4c4e50;
 }
+
 nav ul li a:hover {
-     color: white;
-     background-color: #007079;
+    color: white;
+    background-color: #007079;
 }
+
 nav ul li a:active {
-     color: white;
-     background-color: #007079;
- }
+    color: white;
+    background-color: #007079;
+}
+
 nav ul li a img {
     width: .8em;
 }
+
 footer ul {
     list-style-type: none;
     float: left;
 }
+
 footer ul li a {
     text-decoration: none;
     color: #4c4e50;
 }
+
 .left_footer {
     text-align: left;
 }
+
 footer p {
     text-align: right;
 }
 
+.section {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 3px;
+    border-bottom: #4c4e50 1px solid;
+}
+.section p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.table {
+    display: table;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-spacing: 30px;
+    margin-bottom: 20px;
+}
+
+.div-tr {
+    display: table-row;
+}
+
+.div-td-1, .div-td-2 {
+    display: table-cell;
+    vertical-align: top;
+    font-family: Lato-Regular, sans-serif;
+}
+
+.div-td-2 {
+    line-height: 23px;
+}
+.well {
+    padding: 15px;
+    background-color: #e6e6e6;
+    border-radius: 3px;
+}
+.button {
+    text-align: center;
+    border-radius: 4px;
+    background-color: #4c4e50;
+    border: none;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 20px;
+    color: #e6e6e6;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #5f6164;
+}
