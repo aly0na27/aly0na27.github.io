@@ -196,6 +196,7 @@ footer p {
     padding-right: 15px;
     border-spacing: 30px;
     margin-bottom: 20px;
+    ;
 }
 
 .div-tr {
@@ -206,16 +207,19 @@ footer p {
     display: table-cell;
     vertical-align: top;
     font-family: Lato-Regular, sans-serif;
+    padding: 15px;
+    background-color: #e6e6e6;
+    border-radius: 3px;
 }
 
 .div-td-2 {
     line-height: 23px;
 }
-.well {
-    padding: 15px;
-    background-color: #e6e6e6;
-    border-radius: 3px;
-}
+/*.well {*/
+/*    padding: 15px;*/
+/*    background-color: #e6e6e6;*/
+/*    border-radius: 3px;*/
+/*}*/
 .button {
     text-align: center;
     border-radius: 4px;
