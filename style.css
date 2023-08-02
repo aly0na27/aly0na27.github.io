@@ -19,6 +19,7 @@
 body {
     font-family: 'Lato-Regular', sans-serif;
     color: #4c4e50;
+    background-color: #ffffff;
 }
 
 header:before,
@@ -80,45 +81,11 @@ nav header {
 .nav {
     line-height: 30px;
 }
-/*nav ul {*/
-/*    font-size: 1.3em;*/
-/*    text-align: center;*/
-/*    margin-bottom: 0;*/
-/*}*/
 
-/*nav ul li {*/
-/*    display: inline-block;*/
-/*    list-style: none;*/
-/*    padding: 0;*/
-/*    margin-right: .25em;*/
-
-/*}*/
-
-/*nav ul li a {*/
-/*    display: block;*/
-/*    width: 2em;*/
-/*    height: 2em;*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*    text-align: center;*/
-/*    line-height: 2em;*/
-/*    border-radius: 999em;*/
-/*    background-color: #4c4e50;*/
-/*}*/
-
-/*nav ul li a:hover {*/
-/*    color: white;*/
-/*    background-color: #007079;*/
-/*}*/
-
-/*nav ul li a:active {*/
-/*    color: white;*/
-/*    background-color: #007079;*/
-/*}*/
-
-/*nav ul li a img {*/
-/*    width: .8em;*/
-/*}*/
+.section p {
+    font-family: Lexington, Lato-Regular, sans-serif;
+    color: #d5b0b0;
+}
 .social-media {
     display: inline-block;
     position: absolute;
@@ -230,11 +197,11 @@ footer p {
 }
 
 .section {
-    font-family: Lato-Regular, sans-serif;
+    font-family: Lexington,Lato-Regular, sans-serif;
     font-size: 48px;
     text-align: center;
     letter-spacing: 3px;
-    border-bottom: #4c4e50 1px solid;
+    border-bottom: #d5b0b0 1.8px solid;
 }
 
 .section p {
@@ -262,7 +229,9 @@ footer p {
     line-height: 23px;
     margin: 0 15px 30px 15px;
     padding: 30px 30px;
-    background-color: #e6e6e6;
+    background-image: url("images/pastel_rainbow_gradient_background.jpg");
+    background-size: cover;
+    background-position: center center;
     border-radius: 10px;
 }
 
@@ -336,11 +305,11 @@ footer p {
 .button {
     text-align: center;
     border-radius: 4px;
-    background-color: #4c4e50;
+    background-color: #d5b0b0;
     border: none;
     font-family: Lato-Regular, sans-serif;
     font-size: 20px;
-    color: #e6e6e6;
+    color: #fff;
     padding: 10px 20px;
     cursor: pointer;
 }
