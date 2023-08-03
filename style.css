@@ -13,13 +13,17 @@
     src: url("fonts/Lexington/LexingtonC.ttf");
 }
 
+@font-face {
+    font-family: 'Moo';
+    src: url("fonts/Moo/MooLahLah-Regular.ttf");
+}
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lato-Regular', sans-serif;
-    color: #4c4e50;
+    font-family: Dongle, 'Lato-Regular', sans-serif;
+    color: #725f54;
     background-color: #ffffff;
 }
 
@@ -64,7 +68,7 @@ nav {
     top: 0;
     z-index: 1;
     /*background-color: #e6e6e6;*/
-    padding: 5em 0 ;
+    padding: 5em 0;
     border-radius: 10px;
     background-image: url("images/pastel_rainbow_gradient_background.jpg");
     background-size: cover;
@@ -102,7 +106,7 @@ nav header {
     transform: translate(-50%, -50%);
 }
 
-.a {
+.links {
     color: #fff;
     background: #d5b0b0;
     border-radius: 20px;
@@ -122,11 +126,11 @@ nav header {
     -webkit-font-smoothing: antialiased;
 }
 
-.a:hover {
+.links:hover {
     background: #999999;
 }
 
-.a span {
+.links span {
     color: #666;
     position: absolute;
     font-family: Lato-Regular, sans-serif;
@@ -146,7 +150,7 @@ nav header {
     transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.a span:before {
+.links span:before {
     content: '';
     width: 0;
     height: 0;
@@ -158,49 +162,30 @@ nav header {
     left: 40px;
 }
 
-.a:hover span {
+.links:hover span {
     bottom: 50px;
     visibility: visible;
     opacity: 1;
 }
 
-.a:nth-of-type(1):before {
+.links:nth-of-type(1):before {
     content: url("images/github.svg")
 }
 
-.a:nth-of-type(2):before {
+.links:nth-of-type(2):before {
     content: url("images/telegram.svg");
 }
 
-.a:nth-of-type(3):before {
+.links:nth-of-type(3):before {
     content: url("images/instagram.svg");
 }
 
-.a:nth-of-type(4):before {
+.links:nth-of-type(4):before {
     content: url("images/pinterest.svg");
 }
 
-.a:nth-of-type(5):before {
+.links:nth-of-type(5):before {
     content: url("images/heart.svg");
-}
-
-footer ul {
-    list-style-type: none;
-    float: left;
-
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: #4c4e50;
-}
-
-.left_footer {
-    text-align: left;
-}
-
-footer p {
-    text-align: right;
 }
 
 .section {
@@ -232,7 +217,7 @@ footer p {
     padding: 30px 40px;
 }
 
-.flex-item-1, .flex-item-2 {
+.flex-item-1, .flex-item-2, .flex-item-1-nice {
     vertical-align: top;
     font-family: Lato-Regular, sans-serif;
     line-height: 23px;
@@ -244,7 +229,7 @@ footer p {
     border-radius: 10px;
 }
 
-.flex-item-1 {
+.flex-item-1, .flex-item-1-nice {
     flex-basis: auto;
     width: calc(35%);
     height: calc(35%);
@@ -254,13 +239,40 @@ footer p {
     flex-basis: calc(50% - 30px);
     width: auto;
 }
+.flex-item-2 h2 {
+    font-family: Dongle, Lato-Regular, sans-serif;
+    color: #d5b0b0;
+    font-size: 60px;
+}
 
-
-.photo {
+.photo, .photo_back, .photo_front {
     display: block;
     margin: 0 auto;
     width: calc(100%);
     border-radius: 10px;
+}
+
+.card {
+    position: relative;
+}
+
+.front, .back {
+    position: absolute;
+    transition: .5s;
+    backface-visibility: hidden;
+}
+
+.back {
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
 }
 
 @media (max-width: 900px) {
@@ -273,12 +285,12 @@ footer p {
         margin: 15px 20px;
     }
 
-    .flex-item-1, .flex-item-2 {
+    .flex-item-1, .flex-item-1-nice, .flex-item-2 {
         flex-basis: auto;
         padding: 35px 35px;
     }
 
-    .flex-item-1 {
+    .flex-item-1, .flex-item-1-nice {
         flex-basis: auto;
         width: calc(100%);
         height: calc(100%);
@@ -295,13 +307,13 @@ footer p {
         flex: auto;
     }
 
-    .flex-item-1, .flex-item-2 {
+    .flex-item-1, .flex-item-1-nice, .flex-item-2 {
         flex-basis: auto;
         padding: 20px 20px;
 
     }
 
-    .flex-item-1 {
+    .flex-item-1, .flex-item-1-nice {
         flex-basis: auto;
         width: calc(100%);
         height: calc(100%);
@@ -313,7 +325,7 @@ footer p {
     border-radius: 4px;
     background-color: #d5b0b0;
     border: none;
-    font-family: Lato-Regular, sans-serif;
+    font-family: Dongle, Lato-Regular, sans-serif;
     font-size: 20px;
     color: #fff;
     padding: 10px 20px;
@@ -323,3 +335,23 @@ footer p {
 .button:hover {
     background-color: #5f6164;
 }
+
+footer ul {
+    list-style-type: none;
+    float: left;
+
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #4c4e50;
+}
+
+.left_footer {
+    text-align: left;
+}
+
+footer p {
+    text-align: right;
+}
+

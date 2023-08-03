@@ -61,3 +61,22 @@ function handleSmallScreens() {
 }
 
 handleSmallScreens()
+
+new Swiper('.image-slider', {
+    slidesPerView: 0,
+    spaceBetween: 20,
+    effect: 'fade',
+    loop: true,
+    speed: 300,
+    mousewheel: {
+        invert: true,
+    },
+    slideToClickedSlide: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+    }
+
+})
