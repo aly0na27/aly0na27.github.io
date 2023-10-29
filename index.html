@@ -8,7 +8,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="mobile-web-app-capable" content="yes">
 
-    <title>_aly0na_</title>
+    <title>Alyona</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
     <meta name="description" content="Сайт начинающей разработчицы Лёли">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpeg">
@@ -20,107 +20,263 @@
 
 </head>
 <body class="base-settings">
-<nav>
-    <header>
-        <h1>
-            Alyona Kravchenko
-        </h1>
-        <h2>
-            Beginner Front-end developer
-        </h2>
-        <ul>
-            <li class="github">
-                <a href="https://github.com/aly0na27">
-                    <img src="images/github.png" alt="GitHub">
-                    <span class="span-name">GitHub</span>
-                </a>
-            </li>
-            <li class="telegram">
-                <a href="https://t.me/aly0na27">
-                    <img src="images/telegram.png" alt="Telegram">
-                    <span class="span-name">Telegram</span>
-                </a>
-            </li>
-            <li class="instagram">
-                <a href="https://www.instagram.com/_aly0na___">
-                    <img src="images/instagram.png" alt="instagram">
-                    <span class="span-name">Instagram</span>
-                </a>
-            </li>
-            <li class="pinterest">
-                <a href="https://ru.pinterest.com/alenakravchenko1910">
-                    <img src="images/pinterest.png" alt="pinterest">
-                    <span class="span-name">Pinterest</span>
+<header class="header" id="header">
+    <nav class="header__nav">
+        <div class="menu__icon">
+            <span></span>
+        </div>
 
-                </a>
+        <div class="header__logo-text">
+            <p>
+                <span class="span">A</span>lyona.
+            </p>
+        </div>
+
+        <ul class="nav__link">
+            <li class="nav__item">
+<!--                <button class="btn__night-theme">-->
+                    <!--                    <img src="img/moon.svg" class="img__icon-night-theme" alt=""-->
+                    <svg class="btn__night-theme svg" width="800px" height="800px" viewBox="0 0 24 24" fill="red"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.7553 2.29085V2.29085L12.1432 2.93276ZM7.37554 20.013C7.017 19.8056 6.5582 19.9281 6.3508 20.2866C6.14339 20.6452 6.26591 21.104 6.62446 21.3114L7.37554 20.013ZM2.68862 17.3755C2.89602 17.7341 3.35482 17.8566 3.71337 17.6492C4.07191 17.4418 4.19443 16.983 3.98703 16.6245L2.68862 17.3755ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.5828 12.531 3.57467L11.7553 2.29085C9.65609 3.5593 8.25 5.86509 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.7324 2.63168C11.6686 2.56527 11.6538 2.50244 11.6503 2.47703C11.6461 2.44587 11.6482 2.35557 11.7553 2.29085L12.531 3.57467C13.0342 3.27065 13.196 2.71398 13.1368 2.27627C13.0754 1.82126 12.7166 1.25 12 1.25V2.75ZM21.7092 12.2447C21.6444 12.3518 21.5541 12.3539 21.523 12.3497C21.4976 12.3462 21.4347 12.3314 21.3683 12.2676C21.2899 12.1923 21.25 12.0885 21.25 12H22.75C22.75 11.2834 22.1787 10.9246 21.7237 10.8632C21.286 10.804 20.7293 10.9658 20.4253 11.469L21.7092 12.2447ZM12 21.25C10.3139 21.25 8.73533 20.7996 7.37554 20.013L6.62446 21.3114C8.2064 22.2265 10.0432 22.75 12 22.75V21.25ZM3.98703 16.6245C3.20043 15.2647 2.75 13.6861 2.75 12H1.25C1.25 13.9568 1.77351 15.7936 2.68862 17.3755L3.98703 16.6245Z"
+                              fill="red"
+                        />
+                    </svg>
+<!--                </button>-->
             </li>
+            <li class="nav__item">
+                <a class="nav__item-link" href="#header">Home</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__item-link" href="#section1">About</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__item-link" href="#section2">Portfolio</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__item-link" href="#section3">North</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__item-link" href="#section6">Contact</a>
+            </li>
+
         </ul>
-    </header>
-</nav>
-<div class="section"><p>About</p></div>
-<div class="container">
-    <div class="table">
-        <div class="div-tr">
-            <div class="div-td well">
-                <img src="images/me1.jpg" alt="me">
+    </nav>
+    <div class="header__title">
+        <div class="header__item header__title-text">
+            <h3 class="header__title-status">
+                Beginner Front-end developer
+            </h3>
+            <h1 class="header__title-greeting">
+                Hi, I'm
+                <span class="span">Alyona</span> <br/>
+                Kravchenko from <br/>
+                Ukraine
+            </h1>
+        </div>
+    </div>
+</header>
+<section id="section1" class="section section__about">
+    <div class="animation__title">
+        <div class="title__wrapper">
+            <div class="title__item"><span class="span">Ab</span>out Me</div>
+            <div class="title__item"><span class="span">Ab</span>out Me</div>
+            <div class="title__item"><span class="span">Ab</span>out Me</div>
+            <div class="title__item"><span class="span">Ab</span>out Me</div>
+            <div class="title__item"><span class="span">Ab</span>out Me</div>
+            <div class="title__item"><span class="span">Ab</span>out Me</div>
+            <div class="title__item"><span class="span">Ab</span>out Me</div>
 
+        </div>
+    </div>
+    <div class="about-flex">
+        <img src="img/profile.jpg" alt="Me" class="about__profile-photo">
+        <div class="section1__description">
+            <p>
+                Я из небольшого шахтерского города Ровеньки, Украина.
+                В 2014 году я переехала в Россию и сейчас нахожусь в Москве.
+                Я учусь в РТУ МИРЭА на направлении Прикладная математика и информатика. Так
+                как я очень творческий человек, решила попробовать себя в веб-дизайне и front-end разработке. В
+                свободное от учебы время я изучаю новые технологии и совершенствую свои знания.
+                И кстати, это мой первый сайт. Все сделано супер просто,
+                но со вкусом, я считаю! Также я увлекаюсь вязанием и всем, что связано с рукоделием.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="section2" class="section section--hidden section__portfolio">
+    <div class="animation__title">
+        <div class="title__wrapper">
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+            <div class="title__item">My <span class="span">W</span>orks</div>
+        </div>
+    </div>
+    <div class="container__portfolio">
+        <div class="container__item container__item-1">
+            <div class="card">
+                <img src="img/project1.jpg" class="image__project" alt="Project1">
+                <div class="project__description">
+                    <p>
+                        Это мой первый проект, где я использовала JavaScript. Игра называется
+                        "Угадай число". Да, это довольно-таки просто, но это мой первый проект, где
+                        я использовала JS.
+                        <br/>Link is below ↓
+                    </p>
+                    <a href="https://aly0na27.github.io/guessTheNumber/" class="project-link"><img
+                            src="img/link_icon.svg" class="project-link-image" alt=""></a>
+                </div>
             </div>
-            <div class="div-td well">
-                <h2>Привет, я Алёна</h2>
-                <p>
-                    Я из небольшого шахтерского города Ровеньки, Украина.
-                    В 2014 году я переехала в Россию и сейчас нахожусь в Москве.
-                    Я учусь в РТУ МИРЭА на направлении Прикладная математика и информатика. Со временем поняла,
-                    что то, чем мы занимаемся в вузе мне не нравится, и я начала искать себя в чем-то другом. Так
-                    как я
-                    очень творческий человек, решила попробовать себя в веб-дизайне и front-end разработке. В
-                    свободное от
-                    учебы время я изучаю новые технологии и соверешенствую свои знания.
-                    И кстати, это мой первый сайт. Все сделано супер просто,
-                    но со вкусом, я считаю! Также я увлекаюсь вязанием и всем, что связано с рукоделием.
-                </p>
-                <p>
-                    <button class="button" onclick="alert('Возьмите меня на работу!!!')">Hire me</button>
-                </p>
-
+        </div>
+        <div class="container__item container__item-2">
+            <div class="card">
+                <img src="img/project2.jpg" class="image__project" alt="Project1">
+                <div class="project__description">
+                    <p>
+                        Это игра в кости, где я тренировалась
+                        <br/>Link is below ↓
+                    </p>
+                    <a href="https://aly0na27.github.io/The_pig_game/" class="project-link"><img
+                            src="img/link_icon.svg"
+                            class="project-link-image" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="container__item container__item-3">
+            <div class="card">
+                <img src="img/project3.jpg" class="image__project" alt="Project1">
+                <div class="project__description">
+                    <p>
+                        Это мой сайтик по вязанию, где я сделала свой свайпер для фотографий, а также
+                        использовала Intersection Observer API и плавную прокрутку страницы
+                        <br/>Link is below ↓
+                    </p>
+                    <a href="https://aly0na27.github.io/knittingAndCrochet/" class="project-link"><img
+                            src="img/link_icon.svg" class="project-link-image" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="container__item container__item-3">
+            <div class="card">
+                <img src="img/project4.png" class="image__project" alt="Project1">
+                <div class="project__description">
+                    <p>
+                        Данный проект является подобием социальной сети. В нем я использовала библиотеки
+                        React, Redux, Axios, React-Redux, Formik, а также язык Typescript.
+                        <br/>Link is below ↓
+                    </p>
+                    <a href="https://aly0na27.github.io/my-social-media/" class="project-link"><img
+                            src="img/link_icon.svg" class="project-link-image" alt=""></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="section"><p>My Inspiration</p></div>
-
-<footer id="footer">
-    <div>
-        <ul class="left_footer">
-            <li><a href="crochet.html">Kniting&crochet</a></li>
-            <li></li>
-        </ul>
-        <p>
-            &copy Alyona Kravchenko
-        </p>
+</section>
+<section id="section3" class="section section--hidden section__nature">
+    <div class="title__wrapper animation__title">
+        <div class="title__item">TO LIVE IN THE <span class="span">NORTH!</span></div>
+        <div class="title__item">TO LIVE IN THE <span class="span">NORTH!</span></div>
+        <div class="title__item">TO LIVE IN THE <span class="span">NORTH!</span></div>
+        <div class="title__item">TO LIVE IN THE <span class="span">NORTH!</span></div>
+    </div>
+    <div class="nature__flex">
+        <img src="img/nature.jpg" alt="" class="section3__nature-image">
+        <div class="section3__description">
+            <div class="ticker">
+                <div class="animation_icon">
+                    <div class="ticker__item"><img src="img/reindeer.svg" class="icon__animal" alt=""></div>
+                    <div class="ticker__item"><img src="img/reindeer.svg" class="icon__animal" alt=""></div>
+                    <div class="ticker__item"><img src="img/reindeer.svg" class="icon__animal" alt=""></div>
+                    <div class="ticker__item"><img src="img/reindeer.svg" class="icon__animal" alt=""></div>
+                    <div class="ticker__item"><img src="img/reindeer.svg" class="icon__animal" alt=""></div>
+                    <div class="ticker__item"><img src="img/reindeer.svg" class="icon__animal" alt=""></div>
+                    <div class="ticker__item"><img src="img/reindeer.svg" class="icon__animal" alt=""></div>
+                    <div class="ticker__item"><img src="img/reindeer.svg" class="icon__animal" alt=""></div>
+                </div>
+            </div>
+            <p>
+                Около 10 лет своей жизни я провела на севере России за полярным кругом в Мурманской области в
+                городе под названием, как вы уже догадались, Заполярный. По началу мне не нравилась здешний климат
+                и обстановка в целом, но через год я влюбилась в этот северный суровый регион России. Природа здесь
+                поистине уникальная: пустынная тундра сменяется непроходимым лесом, горы, сопки, озера, море... От всех
+                этих
+                пейзажей просто дух захватывает...
+                <br/>
+                <a class="learn__more" href="#section4">Узнать больше ↓</a>
+            </p>
+        </div>
+    </div>
+</section>
+<section id="section4" class="section section--hidden nature2.0">
+    <div class="section__header">
+        <span class="span">N</span>emetsky <span class="span">P</span>eninsula
 
     </div>
-</footer>
-</body>
-<!--<header>-->
-<!--    <nav>-->
-<!--        <ul>-->
-<!--            <li class="selected"><a href="index.html">Home</a></li>-->
-<!--            <li><a href="about.html">About</a></li>-->
-<!--            <li><a href="crochet.html">Crochet and knitting</a></li>-->
-<!--        </ul>-->
-<!--    </nav>-->
+    <div class="section4__flex">
+        <div class="card__north">
+            <img src="img/nemetsky-peninsula.jpg" class="front front-2" alt="">
+            <div class="back back-1">
+                <p>
+                    Немецкий полуостров, ранее Нурменсаари, находится на
+                    Мурманском берегу Варяжского залива Баренцева моря. До него
+                    можно добраться пешком (10 км, местами по сопкам), но идти примерно
+                    3-4 часа. Поэтому доставлют туда на катерах, если море открыто, а если нет,
+                    то ничего не поделать, идем пешком.
+                </p>
+                <a href="https://www.google.ru/maps/place/Полуостров+Неметский/@69.7049996,31.4094444,14z/data=!3m1!4b1!4m6!3m5!1s0x4434c37240b0b499:0x37a25154acd2b04c!8m2!3d69.705!4d31.4094444!16s%2Fm%2F06zjp2g?entry=ttu"><img
+                        src="img/compass.svg" class="section__description-icon compass1" alt=""></a>
+            </div>
+        </div>
 
-<!--</header>-->
-<!--<section>-->
-<!--    <div class="greating">-->
-<!--        <h2>-->
-<!--            ПРИВЕТ. <br/>-->
-<!--            Я АЛЁНА КРАВЧЕНКО.<br/>-->
-<!--            Я НАЧИНАЮЩИЙ FRONT-END РАЗРАБОТЧИК. <br/>-->
-<!--        </h2>-->
-<!--    </div>-->
-<!--</section>-->
-<!--<script src="script.js"></script>-->
-<!--</body>-->
-<!--</html>-->
+        <div class="card__north">
+            <img src="img/nemetsky_peninsula2.jpg" class="front front-2" alt="">
+            <div class="back back-2">
+                <p>
+                    Эти 10 км стоит пройти, потому что природа здесь удивительна. Тропу со всех
+                    сторон окружают высоченные сопки. Ближе к полуострову есть бухта Золотые пески,
+                    где можно искупаться, поймать рыбу или краба и просто отдохнуть. На самом полуострове
+                    расположено много домиков. Также вы можете там встретить лисичек, морских котиков или
+                    даже горных козлов.
+                </p>
+                <a href="https://www.google.ru/maps/place/Полуостров+Неметский/@69.7049996,31.4094444,14z/data=!3m1!4b1!4m6!3m5!1s0x4434c37240b0b499:0x37a25154acd2b04c!8m2!3d69.705!4d31.4094444!16s%2Fm%2F06zjp2g?entry=ttu"><img
+                        src="img/compass.svg" class="section__description-icon compass1" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="section6" class="section">
+    <footer class="footer">
+        <div class="footer__flex">
+            <h2>Contact me</h2>
+            <div class="footer__social-media">
+                <a class="links" href="https://github.com/aly0na27"><img
+                        src="img/github.svg" class="footer_icon"
+                        alt=""> <span
+                        class="footer__span">Github</span></a>
+                <a class="links" href="https://t.me/aly0na27"><img
+                        src="img/telegram.svg" class="footer_icon"
+                        alt=""><span class="footer__span">Telegram</span></a>
+                <a class="links" href="https://www.instagram.com/_aly0na___"><img
+                        src="img/instagram.svg"
+                        class="footer_icon" alt=""><span
+                        class="footer__span">Instagram</span></a>
+                <a class="links" href="https://vk.com/lelya45"><img
+                        src="img/vk.svg" class="footer_icon" alt=""><span
+                        class="footer__span">Vk</span></a>
+                <a class="links" href="https://yeezy-na-izi.me/"><img src="img/heart.svg" class="footer_icon"
+                                                                      alt=""><span class="footer__span">Honey</span></a>
+            </div>
+        </div>
+    </footer>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
